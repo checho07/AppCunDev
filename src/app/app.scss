@@ -20,6 +20,7 @@
         background-position:center;
         height:36px;
         width:10px;
+        margin-bottom: -30px;
         background-size:contain;
         -webkit-background-size: contain;
         -moz-background-size: contain;
@@ -29,7 +30,11 @@
         }
     }
 }
-
+.tabbar, .tabs-ios, .tabs-wp{
+  .tab-button-icon {
+    height:30px;
+  }
+}
 .tabs-md .tab-button.icon-only{
   display: none;
 }
@@ -50,6 +55,7 @@
     .tab-button-icon[ng-reflect-name=laUIco], .tab-button-icon[aria-label=laUIco] .personality{
       background-image: url(../assets/imgs/21cun.png);
       width: 70px;
+      margin-bottom: -8px;
     }
     .tab-button-icon[ng-reflect-name=directorioIco], .tab-button-icon[aria-label=directorioIco] {
         background-image: url(../assets/imgs/22directorio.png);
@@ -73,6 +79,7 @@
     .tab-button-icon[ng-reflect-name=laUIco], .tab-button-icon[aria-label=laUIco] .personality{
       background-image: url(../assets/imgs/21cun.png);
       width: 70px;
+      margin-bottom: -8px;
     }
     .tab-button-icon[ng-reflect-name=directorioIco], .tab-button-icon[aria-label=directorioIco] {
         background-image: url(../assets/imgs/22directorio.png);
@@ -95,6 +102,7 @@
     }
     .tab-button-icon[ng-reflect-name=laUIco], .tab-button-icon[aria-label=laUIco] .personality{
       width: 70px;
+      margin-bottom: -8px;
       background-image: url(../assets/imgs/21cun.png);
     }
     .tab-button-icon[ng-reflect-name=directorioIco], .tab-button-icon[aria-label=laUIc] {
@@ -120,6 +128,7 @@
     }
     .tab-button-icon[ng-reflect-name=laUIco], .tab-button-icon[aria-label=laUIco] .personality{
       width: 70px;
+      margin-bottom: -8px;
       background-image: url(../assets/imgs/21cun.png);
     }
     .tab-button-icon[ng-reflect-name=directorioIco], .tab-button-icon[aria-label=directorioIco] {
@@ -143,6 +152,7 @@
     }
     .tab-button-icon[ng-reflect-name=laUIco], .tab-button-icon[aria-label=laUIco] .personality{
       width: 70px;
+      margin-bottom: -8px;
       background-image: url(../assets/img/21cun.png);
     }
     .tab-button-icon[ng-reflect-name=directorioIco], .tab-button-icon[aria-label=directorioIco] {
@@ -161,12 +171,14 @@
     .tab-button-icon[ng-reflect-name=noticiasIco], .tab-button-icon[aria-label=noticiasIco] {
       background-image: url(../assets/imgs/19noticias.png);
       width: 42px;
+      
     }
     .tab-button-icon[ng-reflect-name=home], .tab-button-icon[aria-label=home] {
       background-image: url(../assets/img/20sedes.png);
     }
     .tab-button-icon[ng-reflect-name=laUIco], .tab-button-icon[aria-label=laUIco] .personality{
       width: 70px;
+      margin-bottom: -8px;
       background-image: url(../assets/img/21cun.png);
     }
     .tab-button-icon[ng-reflect-name=directorioIco], .tab-button-icon[aria-label=directorioIco] {
