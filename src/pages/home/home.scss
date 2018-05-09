@@ -15,18 +15,18 @@ page-home {
 }
 .tabs-md .tabbar,.tabs-ios .tabbar { 
     background-image: url(../assets/imgs/pie-de-pagina.png);
+    background-attachment: no-repeat;
     background-color: transparent;
     background-position:center;
-    background-size:contain;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    max-width: 100%;
-    height: 58px;
+    background-size:100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    max-width: 100%;   
     border-top-width: 0;    
 }
 .tabs-ios .tabbar{
-height: 65px !important;
+height: 60px !important;
 }
 .content-md{
     background-color: color($colors, primary);
@@ -80,9 +80,12 @@ height: 65px !important;
     padding: 0px;
     margin-top: -10px;
 }
+.button-inner{
+    display: inherit;
+}
 .verdeClaro{
     background-color:color($colors, secondary);
-    height: 100%;
+    height: 95%;
     width: 100%;
     border-radius: 8px;
     padding: 8px 6px;
@@ -90,7 +93,7 @@ height: 65px !important;
 }
 .verdeOscuro{
     background-color: color($colors, third);
-    height: 100%;
+    height: 95%;
     width: 100%;
     border-radius: 8px;
     padding: 8px 6px;
@@ -98,6 +101,9 @@ height: 65px !important;
 }
 .col {
     padding: 6px 5px;
+}
+.candadoIcon{
+    min-width: 100%;
 }
 .imageIcono{
     /*border: 1px solid black;*/
@@ -111,9 +117,15 @@ height: 65px !important;
     color: #fff;
     font-family: Century Gothic;
     font-size: 14px;
+    text-transform: capitalize;
  }
  .iconoImg{
      text-align: center;
+ }
+ .candadoIco{
+     max-width:14%;
+     height: 14px;
+     float: left;
  }
 ion-app.md [padding] {
     padding: 7px;

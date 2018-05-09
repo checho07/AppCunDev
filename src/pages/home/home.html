@@ -17,10 +17,13 @@
     <ion-grid>
     <ion-row  >
       <ion-col   col-4 *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">
-        <div  [ngClass]="{'verdeClaro':i%2 == 0, 'verdeOscuro': i%2 !== 0 }" >
-         <div class="iconoImg" > <img class="imageIcono" [src]="iconsHome.imagen" alt="">  </div>
-          <p>{{iconsHome.nombre}}</p>        
-        </div>
+        <button ion-button [ngClass]="{'verdeClaro':i%2 == 0, 'verdeOscuro': i%2 !== 0 }" >
+          <div class="iconoImg" >
+              <img class="imageIcono" [src]="iconsHome.imagen" alt="">
+              <img class="candadoIco" [src]="iconsHome.candado" alt="">
+          </div>
+            <p>{{iconsHome.nombre}}</p>        
+        </button> 
       </ion-col>
     </ion-row>
   </ion-grid>
