@@ -30,11 +30,11 @@ height: 65px !important;
 }
 .content-md{
     background-color: color($colors, primary);
-    margin-top: 110px;
+    margin-top: 5px;
 }
 .content-ios{
     background-color:color($colors, primary);
-    margin-top: 0px;
+    margin-top: 5px;
 }
 .content .content-md{
     margin-top: 106px;
@@ -57,7 +57,11 @@ height: 65px !important;
     padding: 10px;
 }
 .header-md{
-    height: 0px;
+    height: fit-content;
+}
+
+.header-ios{
+    height: fit-content;
 }
 .imgCun{
     margin-top: 10px;
