@@ -2,14 +2,16 @@ import { AboutPage } from '../pages/about/about';
 import { PruebaPage } from "../pages/prueba/prueba";
 export const IconsHome = [
       {
-        nombre: "Tus notas" ,
-        imagen: "assets/imgs/4notas.png",
-        page:  "NoticiasPage"
+        nombre:  "Tus notas" ,
+        imagen:  "assets/imgs/4notas.png",
+        page:    "NoticiasPage",
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Carné",
         imagen: "assets/imgs/5carne.png",
-        page:   "NotificacionesPage"
+        page:   "NotificacionesPage",
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Calendario",
@@ -19,17 +21,20 @@ export const IconsHome = [
       {
         nombre: "Cun Virtual",
         imagen: "assets/imgs/7virtual.png",
-        page:   ""
+        page:   ""        ,
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Tu horario",
         imagen: "assets/imgs/8horario.png",
-        page:   ""
+        page:   "",
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Gana dinero",
         imagen: "assets/imgs/9dinero.png",
-        page:   ""
+        page:   "",
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Cun media",
@@ -39,7 +44,8 @@ export const IconsHome = [
       {
         nombre: "Biblioteca",
         imagen: "assets/imgs/11biblioteca.png",
-        page:   ""
+        page:   "",
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Aprende",
@@ -49,7 +55,8 @@ export const IconsHome = [
       {
         nombre: "AEI",
         imagen: "assets/imgs/13aei.png",
-        page:   ""
+        page:   "",
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Cun cápsula",
@@ -69,7 +76,8 @@ export const IconsHome = [
       {
         nombre: "Funcionarios",
         imagen: "assets/imgs/17funcionarios.png",
-        page:   ""
+        page:   "",
+        candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Vitapp",

@@ -1,19 +1,20 @@
-<ion-header>
+<ion-header >
   <ion-navbar>
     <ion-title>
       <img class="imgCun" src="assets/imgs/1logo.png">
-      <ion-searchbar (ionInput)="getItems($event)">
-          <div class="searchbar-search-icon"></div>
-      </ion-searchbar>
-      <ion-list>
-        <ion-item *ngFor="let item of items">
-          {{ item }}
-        </ion-item>
-      </ion-list>
+      
     </ion-title>
+    <ion-searchbar (ionInput)="getItems($event)">
+      <div class="searchbar-search-icon"></div>
+  </ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
   </ion-navbar>
 </ion-header>
-<ion-content padding> 
+<ion-content padding>
     <ion-grid>
     <ion-row  >
       <ion-col   col-4 *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">

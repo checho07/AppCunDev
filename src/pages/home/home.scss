@@ -28,23 +28,20 @@ page-home {
 .tabs-ios .tabbar{
 height: 60px !important;
 }
-.content-md{
+.content{
     background-color: color($colors, primary);
-    margin-top: 5px;
+  
+    
 }
-.content-ios{
-    background-color:color($colors, primary);
-    margin-top: 5px;
-}
-.content .content-md{
-    margin-top: 106px;
-}
-.content .content-ios{
-    margin-top: 0px;
-}
+// .content-ios{
+//     background-color:color($colors, primary);
+//     margin-top: px;
+// }
+
 .toolbar-title-md {
+    margin-top: 5px;
     text-align: center;
-    height: 91px;
+    // height: 91px;
 }
 .toolbar-title-ios {
     margin-top: 20px;
@@ -56,29 +53,33 @@ height: 60px !important;
 .ion-app.md [padding] .scroll-content{
     padding: 10px;
 }
-.header-md{
-    height: fit-content;
+.header{
+    height: fit-content !important;
 }
-
-.header-ios{
-    height: fit-content;
+.toolbar-content-ios {
+    height: 82px !important;
 }
 .imgCun{
-    margin-top: 10px;
     height: 43px;
 }
+
 .searchbar-md .searchbar-input {
     color: #fff;
     background: #005c61;
     padding: 0px 49px;
     border-radius: 20px;
 }
+.toolbar .searchbar-ios {
+    top: 45px;
+    
+}
 .toolbar .searchbar-ios .searchbar-input {
     color: #fff;
     background: #005c61;
     padding: 0px 49px;
     border-radius: 20px;
-    width: 100%
+    width: 100%;
+
 }
 .grid {
     padding: 0px;
