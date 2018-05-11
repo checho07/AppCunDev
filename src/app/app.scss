@@ -14,6 +14,17 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+@font-face {
+  font-family: 'CenturyGothic';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../assets/fonts/CenturyGothic.ttf');
+  src: url('../assets/fonts/CenturyGothic.ttf') format('embedded-opentype'),
+}
+$font-family-md-base: "CenturyGothic";
+$font-family-ios-base: "CenturyGothic";
+$font-family-wp-base: "CenturyGothic";
+
 .tabbar, .tabs-ios, .tabs-md , .tabs-wp{
     .tab-button-icon {
         background-repeat:no-repeat;
@@ -25,7 +36,6 @@
         -webkit-background-size: contain;
         -moz-background-size: contain;
         -o-background-size: contain;
-       
         &:before {
             display:none;
         }
