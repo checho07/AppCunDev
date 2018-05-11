@@ -1,4 +1,4 @@
-<ion-header >
+<ion-header  [scrollingHeader]='content'>
   <ion-navbar>
     <ion-title>
       <img class="imgCun" src="assets/imgs/1logo.png">
@@ -17,11 +17,11 @@
 <ion-content padding>
     <ion-grid>
     <ion-row  >
-      <ion-col   col-4 *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">
+      <ion-col  style="height: 100px;" col-4 *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">
         <button ion-button [ngClass]="{'verdeClaro':i%2 == 0, 'verdeOscuro': i%2 !== 0 }" >
-          <div class="iconoImg" >
-              <img class="imageIcono" [src]="iconsHome.imagen" alt="">
-              <img class="candadoIco" [src]="iconsHome.candado" alt="">
+            <img *ngIf="iconsHome.candado " class="candadoIco" [src]="iconsHome.candado" alt="">
+          <div class="iconoImg" >            
+              <img class="imageIcono" [src]="iconsHome.imagen" alt="">            
           </div>
             <p>{{iconsHome.nombre}}</p>        
         </button> 
