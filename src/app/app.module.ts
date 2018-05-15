@@ -14,7 +14,7 @@ import { UbicacionPage } from '../pages/ubicacion/ubicacion';
 import { CunPage } from '../pages/cun/cun';
 import { DirectorioPage } from '../pages/directorio/directorio';
 import { NotificacionesPage } from '../pages/notificaciones/notificaciones';
-import {ScrollingHeaderModule} from 'ionic-scrolling-header';
+//import {ScrollingHeaderModule} from 'ionic-scrolling-header';
 //import {StreamigMedia } from '@ionic-native/streaming-media'
 
 @NgModule({
@@ -33,7 +33,6 @@ import {ScrollingHeaderModule} from 'ionic-scrolling-header';
   ],
   imports: [
     BrowserModule,
-    ScrollingHeaderModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
