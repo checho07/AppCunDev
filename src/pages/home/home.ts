@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Content } from 'ionic-angular';
 import {IconsHome} from "../../data/data.icons";
 import { iconsHome } from "../../interfaces/iconshome.interface";
 import { PruebaPage } from '../prueba/prueba';
@@ -12,11 +12,12 @@ import { UbicacionPage } from '../ubicacion/ubicacion';
   selector: 'page-home',
   templateUrl: 'home.html',
   providers: [AboutPage]
+  
 })
 export class HomePage {
-player:any;
+  player:any;
   iconshome:iconsHome[] = [];
-
+  
   constructor(private nav: NavController,player:AboutPage ) {
     this.iconshome = IconsHome.slice(0);
     this.player = player;
