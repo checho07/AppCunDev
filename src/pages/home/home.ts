@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavController, Content } from 'ionic-angular';
 import {IconsHome} from "../../data/data.icons";
 import { iconsHome } from "../../interfaces/iconshome.interface";
@@ -17,11 +17,7 @@ import { UbicacionPage } from '../ubicacion/ubicacion';
 export class HomePage {
   player:any;
   iconshome:iconsHome[] = [];
-
-
-  @ViewChild (Content) content :Content;
   
-
   constructor(private nav: NavController,player:AboutPage ) {
     this.iconshome = IconsHome.slice(0);
     this.player = player;
