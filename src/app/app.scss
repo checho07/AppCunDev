@@ -14,3 +14,40 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.bar-button-default {
+    color:color($colors, secondary);
+}
+
+//............................................................animaciones.............................................//
+
+.iconoAnim {
+    -webkit-animation-name: iconoAnim; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: iconoAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@keyframes iconoAnim {
+from {
+    -webkit-transform: scale3d(5, 5, 5);
+    transform: scale3d(1, 1, 1);
+
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+
+  }
+
+  to {
+    -webkit-transform: scale3d(3, 3, 3);
+    transform: scale3d(1, 1, 1);
+
+  }
+}

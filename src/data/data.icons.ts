@@ -1,5 +1,6 @@
 import { AboutPage } from '../pages/about/about';
-import { PruebaPage } from "../pages/prueba/prueba";
+import {AprendePage} from '../pages/aprende/aprende';
+
 export const IconsHome = [
       {
         nombre:  "Tus notas" ,
@@ -50,7 +51,7 @@ export const IconsHome = [
       {
         nombre: "Aprende",
         imagen: "assets/imgs/12aprende.png",
-        page:   ""
+        page:   "AprendePage"
       },
       {
         nombre: "AEI",

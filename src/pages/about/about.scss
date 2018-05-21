@@ -4,21 +4,10 @@ page-about {
 container-button-about{
     background-color:  #007d64;
 }
-.toolbar-title-md {
-    color: #008c65;
-}
-.title-page{
-    color: #008c65;
-    align-items: flex-start
-}
-.fontTitle {
-    margin-top: 10px;
-    font-size: 2.6rem;
-    float: left;
-}.iconoVerde{
-    float: right;
-    margin-top: 10px;
-    height: 40px;
+.iconoVerde {
+    float: right !important;
+    margin-top: -48px  !important;
+    height: 40px  !important;
 }
 .sonido{
     text-align: right;

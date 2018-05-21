@@ -8,13 +8,16 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { PruebaPage } from '../pages/prueba/prueba';
 import { NoticiasPage } from '../pages/noticias/noticias';
 import { UbicacionPage } from '../pages/ubicacion/ubicacion';
 import { CunPage } from '../pages/cun/cun';
 import { DirectorioPage } from '../pages/directorio/directorio';
 import { NotificacionesPage } from '../pages/notificaciones/notificaciones';
+// import {ScrollingHeaderModule} from 'ionic-scrolling-header';
+import { AprendePage } from '../pages/aprende/aprende';
+
 //import {ScrollingHeaderModule} from 'ionic-scrolling-header';
+
 //import {StreamigMedia } from '@ionic-native/streaming-media'
 
 @NgModule({
@@ -24,7 +27,7 @@ import { NotificacionesPage } from '../pages/notificaciones/notificaciones';
     ContactPage,
     HomePage,
     TabsPage,
-    PruebaPage,
+    AprendePage,
     NoticiasPage,
     UbicacionPage,
     CunPage,
@@ -33,7 +36,9 @@ import { NotificacionesPage } from '../pages/notificaciones/notificaciones';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp,{
+      backButtonText: ''
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,7 +47,7 @@ import { NotificacionesPage } from '../pages/notificaciones/notificaciones';
     ContactPage,
     HomePage,
     TabsPage,
-    PruebaPage,
+    AprendePage,
     NoticiasPage,
     UbicacionPage,
     CunPage,

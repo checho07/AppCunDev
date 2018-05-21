@@ -11,7 +11,9 @@ page-home {
 .ion-app.md [padding] .scroll-content{
     padding: 10px;
 }
-
+.scroll-content{
+    overflow-y: auto !important;
+}
 //..........................................clase de header y footer ionic ..................................//
 // .toolbar{
 //     padding: 4px 0 0 0 !important;
@@ -29,14 +31,13 @@ page-home {
 .toolbar-background-ios {
     background-color: color($colors, primary);
 }
-.toolbar-title-md {
-    margin-top: 5px;
-    text-align: center;
-    // height: 91px;
-}
-.toolbar-title-ios {
-    margin-top: 5px;
-}
+.toolbar-title {
+    margin-top: 5px !important;
+    text-align: left !important ;
+    font-size: 2em !important;
+    font-weight: bolder !important;
+    color: color($colors, secondary);
+ }
 .toolbar-ios ion-title{
     padding: 0 10px;
 }
@@ -50,6 +51,7 @@ page-home {
 
 .imgCun{
     height: 43px;
+    margin-top: 15px;
 }
 
 .searchbar-md .searchbar-input {
@@ -58,8 +60,15 @@ page-home {
     padding: 0px 49px;
     border-radius: 20px;
 }
-.toolbar .searchbar-ios {
-    top: 33px;    
+.searchbar-ios .searchbar-input {
+    color: #fff !important;
+}
+.searchbar-search-icon {
+    background-image: url(../assets/imgs/3Lupa.png)!important;
+}
+.searchbar-md .searchbar-search-icon, .searchbar-md .searchbar-md-cancel {
+    background-size: 15px;
+    top: 9px;
 }
 .toolbar .searchbar-ios .searchbar-input {
     color: #fff;
@@ -84,16 +93,16 @@ page-home {
 }
 .verdeClaro{
     background-color:color($colors, secondary);
-    height: 95%;
-    width: 100%;
+    height: 90px;
+    width: 120px;
     border-radius: 8px;
     padding: 8px 6px;
 
 }
 .verdeOscuro{
     background-color: color($colors, third);
-    height: 95%;
-    width: 100%;
+    height: 90px;
+    width: 120px;
     border-radius: 8px;
     padding: 8px 6px;
 
@@ -159,3 +168,42 @@ ion-app.ios [padding] {
   height: 25px;
   margin: 25px 10px 0 14px;
 }
+
+// .pulse{
+//     -webkit-animation-name: pulse;
+//     animation-name: pulse;
+// }
+
+// @-webkit-keyframes pulse {
+//     from {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+  
+//     50% {
+//       -webkit-transform: scale3d(1.05, 1.05, 1.05);
+//       transform: scale3d(1.05, 1.05, 1.05);
+//     }
+  
+//     to {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+//   }
+  
+//   @keyframes pulse {
+//     from {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+  
+//     50% {
+//       -webkit-transform: scale3d(1.05, 1.05, 1.05);
+//       transform: scale3d(1.05, 1.05, 1.05);
+//     }
+  
+//     to {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+//   }
