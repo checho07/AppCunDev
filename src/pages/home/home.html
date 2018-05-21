@@ -1,23 +1,22 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
+    <div text-center>
       <img class="imgCun" src="assets/imgs/1logo.png">
-      
-    </ion-title>
+    </div>
     <ion-searchbar (ionInput)="getItems($event)">
       <div class="searchbar-search-icon"></div>
-  </ion-searchbar>
-  <ion-list>
+    </ion-searchbar>
+    <!-- <ion-list>
     <ion-item *ngFor="let item of items">
       {{ item }}
     </ion-item>
-  </ion-list>
+  </ion-list> -->
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-    <ion-grid>
-    <ion-row  >
-      <ion-col  style="height: 100px;" col-4 *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">
+  <ion-grid>
+    <ion-row>
+      <ion-col  style="height: 100px;" col-auto  *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">
         <button ion-button [ngClass]="{'verdeClaro':i%2 == 0, 'verdeOscuro': i%2 !== 0 }" >
             <img *ngIf="iconsHome.candado " class="candadoIco" [src]="iconsHome.candado" alt="">
           <div class="iconoImg" >            
@@ -25,7 +24,11 @@
           </div>
             <p>{{iconsHome.nombre}}</p>        
         </button> 
+      
       </ion-col>
+  
+       
+     
     </ion-row>
   </ion-grid>
 </ion-content>
@@ -34,33 +37,44 @@
     <ion-grid class="gridFooter">
       <ion-row>
         <ion-col col-2>
-           
-            <img class="iconFooter" src="../assets/imgs/19noticias.png"/>
-          
-        </ion-col> 
+
+          <img class="iconFooter" src="../assets/imgs/19noticias.png" />
+
+        </ion-col>
         <ion-col col-2>
-          
-            <img class="iconFooter" src="../assets/imgs/20sedes.png"/>
-          
-        </ion-col> 
+
+          <img class="iconFooter" src="../assets/imgs/20sedes.png" />
+
+        </ion-col>
         <ion-col col-4>
-          
-            <img class="iconoU" src="../assets/imgs/21cun.png"/>
-          
-        </ion-col> 
+
+          <img class="iconoU" src="../assets/imgs/21cun.png" />
+
+        </ion-col>
         <ion-col col-2>
-          
-            <img class="iconFooter" src="../assets/imgs/22directorio.png"/>
-          
-        </ion-col> 
+
+          <img class="iconFooter" src="../assets/imgs/22directorio.png" />
+
+        </ion-col>
         <ion-col col-2>
-         
-            <img class="iconFooter" src="../assets/imgs/23notificaciones.png"/>
-          
-        </ion-col>       
+
+          <img class="iconFooter" src="../assets/imgs/23notificaciones.png" />
+
+        </ion-col>
       </ion-row>
-    </ion-grid>  
+    </ion-grid>
   </ion-toolbar>
 </ion-footer>
 
-        <!-- (click)="prueba(iconsHome.nombre)" -->
+<!-- (click)="prueba(iconsHome.nombre)" -->
+
+<!-- 
+.menu-open-button {
+  background: #F4B350;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin-left: -60px;
+  position: absolute;
+  top: 0;
+  color: white; -->

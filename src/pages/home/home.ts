@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { NavController, Content } from 'ionic-angular';
 import {IconsHome} from "../../data/data.icons";
 import { iconsHome } from "../../interfaces/iconshome.interface";
-import { PruebaPage } from '../prueba/prueba';
 import { AboutPage } from '../about/about';
 import { NoticiasPage } from '../noticias/noticias';
 import { NotificacionesPage } from '../notificaciones/notificaciones';
 import { UbicacionPage } from '../ubicacion/ubicacion';
+import { AprendePage } from '../aprende/aprende';
 
 @Component({
   selector: 'page-home',
@@ -23,7 +23,7 @@ export class HomePage {
     this.player = player;
   }
  pagepush(nombre){
-   var paginasMenu = [AboutPage,NoticiasPage,NotificacionesPage,UbicacionPage];
+   var paginasMenu = [AboutPage,AprendePage,NoticiasPage,NotificacionesPage,UbicacionPage];
    for (let i in paginasMenu) {
 
     if(paginasMenu[i].name === nombre){
@@ -45,3 +45,4 @@ pause() {
 }
 
 }
+

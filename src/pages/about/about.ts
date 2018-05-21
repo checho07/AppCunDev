@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media';
+import { HomePage } from '../home/home';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class AboutPage {
     promise:any;
     prueba:any;
     
-   constructor() {
+   constructor(public navCtrl: NavController, public navParams: NavParams) {
      this.url = "http://stream.miradio.in:8553/stream?type=.mp3";
      this.stream = new Audio(this.url);
      this.prueba = false;
@@ -42,5 +43,9 @@ export class AboutPage {
     this.stream.pause();
     this.prueba = false; 
   };
+
+  homePush(){
+    this.navCtrl.push(HomePage)
+  }
   
   }
