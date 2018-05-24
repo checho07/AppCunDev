@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header #head>
   <ion-navbar>
     <div text-center>
       <img class="imgCun" src="assets/imgs/1logo.png">
@@ -13,68 +13,42 @@
   </ion-list> -->
   </ion-navbar>
 </ion-header>
-<ion-content padding>
-  <ion-grid>
+<ion-content padding  hide-header [header]="head">
+  <ion-grid ng-class="{'grillaIos': platform === 'ios', 'grillaMd': platform != 'ios'}">
     <ion-row>
-      <ion-col  style="height: 100px;" col-auto  *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">
+      <ion-col  style="height: 100px;" col-4 margin-top *ngFor="let iconsHome of iconshome; let i = index" (click)="pagepush(iconsHome.page)">
         <button ion-button [ngClass]="{'verdeClaro':i%2 == 0, 'verdeOscuro': i%2 !== 0 }" >
-            <img *ngIf="iconsHome.candado " class="candadoIco" [src]="iconsHome.candado" alt="">
-          <div class="iconoImg" >            
-              <img class="imageIcono" [src]="iconsHome.imagen" alt="">            
+          <img *ngIf="iconsHome.candado " class="candadoIco" [src]="iconsHome.candado" alt="">
+          <div class="iconoImg" >  
+                     
+            <img class="imageIcono" [src]="iconsHome.imagen" alt="">            
           </div>
-            <p>{{iconsHome.nombre}}</p>        
-        </button> 
-      
-      </ion-col>
-  
-       
-     
+          <p>{{iconsHome.nombre}}</p>        
+        </button>       
+      </ion-col>    
     </ion-row>
-  </ion-grid>
+  </ion-grid >
 </ion-content>
 <ion-footer>
   <ion-toolbar>
     <ion-grid class="gridFooter">
       <ion-row>
         <ion-col col-2>
-
-          <img class="iconFooter" src="../assets/imgs/19noticias.png" />
-
+          <img class="iconFooter" src="../assets/imgs/19noticias.png" (click)="noticiasPush()"/>
         </ion-col>
         <ion-col col-2>
-
-          <img class="iconFooter" src="../assets/imgs/20sedes.png" />
-
+          <img class="iconFooter" src="../assets/imgs/20sedes.png" (click)="sedesPush()"/>
         </ion-col>
         <ion-col col-4>
-
-          <img class="iconoU" src="../assets/imgs/21cun.png" />
-
+          <img class="iconoU" src="../assets/imgs/21cun.png" (click)="cunPush()"/>
         </ion-col>
         <ion-col col-2>
-
-          <img class="iconFooter" src="../assets/imgs/22directorio.png" />
-
+          <img class="iconFooter" src="../assets/imgs/22directorio.png" (click)="directorioPush()" />
         </ion-col>
         <ion-col col-2>
-
-          <img class="iconFooter" src="../assets/imgs/23notificaciones.png" />
-
+          <img class="iconFooter" src="../assets/imgs/23notificaciones.png" (click)="notificacionesPush()"/>
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-toolbar>
 </ion-footer>
-
-<!-- (click)="prueba(iconsHome.nombre)" -->
-
-<!-- 
-.menu-open-button {
-  background: #F4B350;
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  margin-left: -60px;
-  position: absolute;
-  top: 0;
-  color: white; -->

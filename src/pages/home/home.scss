@@ -84,9 +84,13 @@ page-home {
     padding: 4px 17px;
 }
 //................................................................ contenido, botones .....................................................//
-.grid {
+.grid-ios{
     padding: 0px;
     margin-top: -10px;
+}
+.grid-md{
+    padding: 0px;
+    margin-top: -50px;
 }
 .button-inner{
     display: inherit;
@@ -94,7 +98,7 @@ page-home {
 .verdeClaro{
     background-color:color($colors, secondary);
     height: 90px;
-    width: 120px;
+    width: 100%;
     border-radius: 8px;
     padding: 8px 6px;
 
@@ -102,7 +106,7 @@ page-home {
 .verdeOscuro{
     background-color: color($colors, third);
     height: 90px;
-    width: 120px;
+    width: 100%;
     border-radius: 8px;
     padding: 8px 6px;
 

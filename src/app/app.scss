@@ -23,10 +23,10 @@
 
 .iconoAnim {
     -webkit-animation-name: iconoAnim; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
     animation-name: iconoAnim;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     
 }
@@ -34,20 +34,20 @@
 /* Safari 4.0 - 8.0 */
 @keyframes iconoAnim {
 from {
-    -webkit-transform: scale3d(5, 5, 5);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(0.5, 0.5, 0.5);
 
   }
 
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1, 1, 1);
 
   }
 
   to {
     -webkit-transform: scale3d(3, 3, 3);
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(0.5, 0.5, 0.5);
 
   }
 }
