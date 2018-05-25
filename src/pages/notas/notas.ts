@@ -39,6 +39,18 @@ export class NotasPage {
     },
     {
       asignatura:'Programacion Web',c1:25,c2:30,c3:40
+    },
+    {
+      asignatura:'Programacion f',c1:25,c2:30,c3:40
+    },
+    {
+      asignatura:'Administracion de base de datos ',c1:25,c2:30,c3:40
+    },
+    {
+      asignatura:'Refinamiento de software',c1:25,c2:30,c3:40
+    },
+    {
+      asignatura:'Proeyecto de grado I',c1:25,c2:30,c3:40
     }
   ]
 
