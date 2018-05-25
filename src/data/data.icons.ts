@@ -1,40 +1,53 @@
+import { NotasPage } from '../pages/notas/notas';
+import { CarnePage } from '../pages/carne/carne';
+import { CalendarioPage } from '../pages/calendario/calendario';
+import { CunVirtualPage } from '../pages/cun-virtual/cun-virtual';
+import { HorarioPage } from '../pages/horario/horario';
+
 import { AboutPage } from '../pages/about/about';
+import { BibliotecaPage } from '../pages/biblioteca/biblioteca';
 import {AprendePage} from '../pages/aprende/aprende';
+import { AeiPage } from '../pages/aei/aei';
+import { CapsulaPage } from '../pages/capsula/capsula';
+import { EmpleoPage } from '../pages/empleo/empleo';
+import { DiviertetePage } from '../pages/diviertete/diviertete';
+import { FuncionariosPage } from '../pages/funcionarios/funcionarios';
+import { VitappPage } from '../pages/vitapp/vitapp';
 
 export const IconsHome = [
       {
         nombre:  "Tus notas" ,
         imagen:  "assets/imgs/4notas.png",
-        page:    "NoticiasPage",
+        page:    "NotasPage",
         candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Carné",
         imagen: "assets/imgs/5carne.png",
-        page:   "NotificacionesPage",
+        page:   "CarnePage",
         candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Calendario",
         imagen: "assets/imgs/6calendario.png",
-        page:   "UbicaiconPage"
+        page:   "CalendarioPage"
       },
       {
         nombre: "Cun Virtual",
         imagen: "assets/imgs/7virtual.png",
-        page:   ""        ,
+        page:   "CunVirtualPage"        ,
         candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Tu horario",
         imagen: "assets/imgs/8horario.png",
-        page:   "",
+        page:   "HorarioPage",
         candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Gana dinero",
         imagen: "assets/imgs/9dinero.png",
-        page:   "",
+        page:   "GanaDineroPage",
         candado: "assets/imgs/IconoCandado.png"
       },
       {
@@ -45,7 +58,7 @@ export const IconsHome = [
       {
         nombre: "Biblioteca",
         imagen: "assets/imgs/11biblioteca.png",
-        page:   "",
+        page:   "BibliotecaPage",
         candado: "assets/imgs/IconoCandado.png"
       },
       {
@@ -56,33 +69,33 @@ export const IconsHome = [
       {
         nombre: "AEI",
         imagen: "assets/imgs/13aei.png",
-        page:   "",
+        page:   "AeiPage",
         candado: "assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Cun cápsula",
         imagen: "assets/imgs/14capsula.png",
-        page:   ""
+        page:   "CapsulaPage"
       },
       {
         nombre: "Empleo",
         imagen: "assets/imgs/15empleo.png",
-        page:   ""
+        page:   "EmpleoPage"
       },
       {
         nombre: "Diviértete",
         imagen: "assets/imgs/16diviertete.png",
-        page:   ""
+        page:   "DiviertetePage"
       },
       {
         nombre: "Funcionarios",
         imagen: "assets/imgs/17funcionarios.png",
-        page:   "",
-        candado: "assets/imgs/IconoCandado.png"
+        page:   "FuncionariosPage",
+        candado:"assets/imgs/IconoCandado.png"
       },
       {
         nombre: "Vitapp",
         imagen: "assets/imgs/18vitapp.png",
-        page:   ""
+        page:   "VitappPage"
       }
 ];

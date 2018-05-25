@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
 
 /**
  * Generated class for the AprendePage page.
@@ -15,7 +16,8 @@ import { HomePage } from '../home/home';
 })
 export class AprendePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, screenOrientation: ScreenOrientation) {
+    screenOrientation.unlock();
   }
 
   homePush(){

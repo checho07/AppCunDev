@@ -15,6 +15,21 @@ import { DirectorioPage } from '../pages/directorio/directorio';
 import { NotificacionesPage } from '../pages/notificaciones/notificaciones';
 // import {ScrollingHeaderModule} from 'ionic-scrolling-header';
 import { AprendePage } from '../pages/aprende/aprende';
+import { NotasPage } from '../pages/notas/notas';
+import { CarnePage } from '../pages/carne/carne';
+import { CalendarioPage } from '../pages/calendario/calendario';
+import { CunVirtualPage } from '../pages/cun-virtual/cun-virtual';
+import { HorarioPage } from '../pages/horario/horario';
+
+import { BibliotecaPage } from '../pages/biblioteca/biblioteca';
+import { AeiPage } from '../pages/aei/aei';
+import { CapsulaPage } from '../pages/capsula/capsula';
+import { EmpleoPage } from '../pages/empleo/empleo';
+import { DiviertetePage } from '../pages/diviertete/diviertete';
+import { FuncionariosPage } from '../pages/funcionarios/funcionarios';
+import { VitappPage } from '../pages/vitapp/vitapp';
+import { ScreenOrientation } from '@ionic-native/screen-orientation';
+import { HideHeaderDirective } from '../Directivas/headerHide';
 
 //import {ScrollingHeaderModule} from 'ionic-scrolling-header';
 
@@ -23,16 +38,28 @@ import { AprendePage } from '../pages/aprende/aprende';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
-    TabsPage,
+    NotasPage,
+    CarnePage,
+    CalendarioPage,
+    CunVirtualPage,
+    HorarioPage,
+    AboutPage,   
+    BibliotecaPage,
     AprendePage,
+    AeiPage,
+    CapsulaPage,
+    EmpleoPage,
+    DiviertetePage,
+    FuncionariosPage,
+    VitappPage,
+    TabsPage,
     NoticiasPage,
     UbicacionPage,
     CunPage,
     DirectorioPage, 
-    NotificacionesPage
+    NotificacionesPage,
+    HideHeaderDirective
   ],
   imports: [
     BrowserModule,
@@ -43,11 +70,22 @@ import { AprendePage } from '../pages/aprende/aprende';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
-    TabsPage,
+    NotasPage,
+    CarnePage,
+    CalendarioPage,
+    CunVirtualPage,
+    HorarioPage,
+    AboutPage,   
+    BibliotecaPage,
     AprendePage,
+    AeiPage,
+    CapsulaPage,
+    EmpleoPage,
+    DiviertetePage,
+    FuncionariosPage,
+    VitappPage,
+    TabsPage,
     NoticiasPage,
     UbicacionPage,
     CunPage,
@@ -57,7 +95,9 @@ import { AprendePage } from '../pages/aprende/aprende';
   providers: [
     StatusBar,
     SplashScreen,
+    ScreenOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
+
   ]
 })
 export class AppModule {}

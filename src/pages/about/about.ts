@@ -20,22 +20,20 @@ export class AboutPage {
      this.stream = new Audio(this.url);
      this.prueba = false;
    };
-  
-   play() {
-     this.stream.play();
-     this.promise = new Promise((resolve,reject) => {
-       this.stream.addEventListener('playing', () => {
-         resolve(true);
-         this.prueba = true;  
+   
+  // Definición de funcion cun radio
 
-       });
-  
-       this.stream.addEventListener('error', () => {
-         reject(false);
-         
-       });
-     });
-     
+  play() {
+    this.stream.play();
+      this.promise = new Promise((resolve,reject) => {
+        this.stream.addEventListener('playing', () => {
+         resolve(true);
+         this.prueba = true; 
+        });
+      this.stream.addEventListener('error', () => {
+        reject(false);         
+      });
+    });     
     return this.promise;
   };
   
@@ -43,9 +41,8 @@ export class AboutPage {
     this.stream.pause();
     this.prueba = false; 
   };
-
+  // icono verde cun
   homePush(){
-    this.navCtrl.push(HomePage)
-  }
-  
-  }
+    this.navCtrl.setRoot(HomePage)
+  }  
+}
