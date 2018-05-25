@@ -39,7 +39,8 @@ $colors: (
   third :     #00695c,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  whiteDark: #258c68
 );
 
 
@@ -81,9 +82,8 @@ $colors: (
 
 @import "ionic.ionicons";
 
-
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+//  @import "roboto";
+//  @import "noto-sans";

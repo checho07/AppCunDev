@@ -1,11 +1,29 @@
 page-home {
 
 }
+ //...............................................pagina en general.......................................//
 .ion-page{
     background-color: color($colors, primary);
 }
+.content{
+    background-color: color($colors, primary);    
+}
+.ion-app.md [padding] .scroll-content{
+    padding: 10px;
+}
+.scroll-content{
+    overflow-y: auto !important;
+}
+//..........................................clase de header y footer ionic ..................................//
+// .toolbar{
+//     padding: 4px 0 0 0 !important;
+// }
 .toolbar-ios {
-    min-height: 100px;
+    padding: 0;
+    min-height: 20px;
+}
+.toolbar-md {
+    padding: 0;
 }
 .toolbar-background-md {
     background-color: color($colors, primary);
@@ -13,54 +31,27 @@ page-home {
 .toolbar-background-ios {
     background-color: color($colors, primary);
 }
-.tabs-md .tabbar,.tabs-ios .tabbar { 
-    background-image: url(../assets/imgs/pie-de-pagina.png);
-    background-attachment: no-repeat;
-    background-color: transparent;
-    background-position:center;
-    background-size:100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    max-width: 100%;   
-    border-top-width: 0;    
-}
-.tabs-ios .tabbar{
-height: 60px !important;
-}
-.content{
-    background-color: color($colors, primary);
-  
-    
-}
-// .content-ios{
-//     background-color:color($colors, primary);
-//     margin-top: px;
-// }
-
-.toolbar-title-md {
-    margin-top: 5px;
-    text-align: center;
-    // height: 91px;
-}
-.toolbar-title-ios {
-    margin-top: 20px;
-}
+.toolbar-title {
+    margin-top: 5px !important;
+    text-align: left !important ;
+    font-size: 2em !important;
+    font-weight: bolder !important;
+    color: color($colors, secondary);
+ }
 .toolbar-ios ion-title{
     padding: 0 10px;
 }
-
-.ion-app.md [padding] .scroll-content{
-    padding: 10px;
+.toolbar-content-ios {
+    height: auto !important;
 }
+//..............................................................header...........................................//
 .header{
     height: fit-content !important;
 }
-.toolbar-content-ios {
-    height: 82px !important;
-}
+
 .imgCun{
     height: 43px;
+    margin-top: 15px;
 }
 
 .searchbar-md .searchbar-input {
@@ -69,9 +60,15 @@ height: 60px !important;
     padding: 0px 49px;
     border-radius: 20px;
 }
-.toolbar .searchbar-ios {
-    top: 45px;
-    
+.searchbar-ios .searchbar-input {
+    color: #fff !important;
+}
+.searchbar-search-icon {
+    background-image: url(../assets/imgs/3Lupa.png)!important;
+}
+.searchbar-md .searchbar-search-icon, .searchbar-md .searchbar-md-cancel {
+    background-size: 15px;
+    top: 9px;
 }
 .toolbar .searchbar-ios .searchbar-input {
     color: #fff;
@@ -79,8 +76,14 @@ height: 60px !important;
     padding: 0px 49px;
     border-radius: 20px;
     width: 100%;
-
 }
+.toolbar .searchbar-md{
+    padding: 5px 20px 0 20px;
+}
+.searchbar-ios {
+    padding: 4px 17px;
+}
+//................................................................ contenido, botones .....................................................//
 .grid {
     padding: 0px;
     margin-top: -10px;
@@ -90,7 +93,7 @@ height: 60px !important;
 }
 .verdeClaro{
     background-color:color($colors, secondary);
-    height: 95%;
+    height: 90px;
     width: 100%;
     border-radius: 8px;
     padding: 8px 6px;
@@ -98,7 +101,7 @@ height: 60px !important;
 }
 .verdeOscuro{
     background-color: color($colors, third);
-    height: 95%;
+    height: 90px;
     width: 100%;
     border-radius: 8px;
     padding: 8px 6px;
@@ -111,7 +114,6 @@ height: 60px !important;
     min-width: 100%;
 }
 .imageIcono{
-    /*border: 1px solid black;*/
     height: 39px;
     width: 45px;
     padding-top: 4px;
@@ -121,10 +123,11 @@ height: 60px !important;
     margin: 0;
     color: #fff;
     font-family: Century Gothic;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: capitalize;
  }
  .iconoImg{
+     margin-top: 5px;
      text-align: center;
  }
  .candadoIco{
@@ -132,16 +135,75 @@ height: 60px !important;
      height: 14px;
      float: left;
  }
-ion-app.md [padding] {
-    padding: 7px;
+.button{
+    box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.3) ,
+                0 3px 1px -2px rgba(0, 0, 0, 0.3) ,
+                0 1px 5px 0 rgba(0, 0, 0, 0.3) !important;
 }
-.tabs-md .tab-button-text {
-    visibility: hidden;
+//................................................................ footer ........................................................//
+.gridFooter{
+  background-image: url(../assets/imgs/piepagina.png)!important;
+  //background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -13px;
 }
-.tabs-ios .tab-button-text {
-    visibility: hidden;
+.iconFooter{
+    max-width:100%;
+    height: 30px;
+    margin-top: 19px;
 }
-.footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
-    top: inherit;
-    bottom: 0;
+.iconoU{
+    max-width: 80%;
+    height: 45px;
+    margin: 10px 14px;
 }
+ion-app.ios [padding] {
+    padding: 0px 16px;
+}
+
+.iconFooter{
+  height: 25px;
+  margin: 25px 10px 0 14px;
+}
+
+// .pulse{
+//     -webkit-animation-name: pulse;
+//     animation-name: pulse;
+// }
+
+// @-webkit-keyframes pulse {
+//     from {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+  
+//     50% {
+//       -webkit-transform: scale3d(1.05, 1.05, 1.05);
+//       transform: scale3d(1.05, 1.05, 1.05);
+//     }
+  
+//     to {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+//   }
+  
+//   @keyframes pulse {
+//     from {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+  
+//     50% {
+//       -webkit-transform: scale3d(1.05, 1.05, 1.05);
+//       transform: scale3d(1.05, 1.05, 1.05);
+//     }
+  
+//     to {
+//       -webkit-transform: scale3d(1, 1, 1);
+//       transform: scale3d(1, 1, 1);
+//     }
+//   }

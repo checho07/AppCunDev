@@ -1,14 +1,21 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      <div  class="title-page">
-        <h1 class="fontTitle">Cun Radio</h1>
-        <img class="iconoVerde" src="assets/imgs/icono-cun-verde.png">
-      </div>       
-    </ion-title>
+  <ion-navbar hideBackButton>
+    <ion-row>
+      <ion-col >
+        <ion-title>
+          Cun Radio
+        </ion-title>
+      </ion-col>
+      <ion-col >
+        <ion-item text-wrap  color="primary" no-lines (click)="homePush()">
+          <ion-avatar item-right>
+            <img class="iconoAnim" src="assets/imgs/icono-cun-verde.png">
+          </ion-avatar>
+        </ion-item>
+      </ion-col>
+    </ion-row>   
   </ion-navbar>
 </ion-header>
-
 <ion-content padding>
   <div class="sonido" *ngIf="prueba">
       <img class="imgSonido" src="assets/imgs/sonido-activado.png">
