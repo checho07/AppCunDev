@@ -23,21 +23,17 @@ export class AboutPage {
    
   // Definición de funcion cun radio
 
-   play() {
-     this.stream.play();
-     this.promise = new Promise((resolve,reject) => {
-       this.stream.addEventListener('playing', () => {
+  play() {
+    this.stream.play();
+      this.promise = new Promise((resolve,reject) => {
+        this.stream.addEventListener('playing', () => {
          resolve(true);
-         this.prueba = true;  
-
-       });
-  
-       this.stream.addEventListener('error', () => {
-         reject(false);
-         
-       });
-     });
-     
+         this.prueba = true; 
+        });
+      this.stream.addEventListener('error', () => {
+        reject(false);         
+      });
+    });     
     return this.promise;
   };
   
@@ -46,9 +42,7 @@ export class AboutPage {
     this.prueba = false; 
   };
   // icono verde cun
-
   homePush(){
     this.navCtrl.setRoot(HomePage)
-  }
-  
-  }
+  }  
+}

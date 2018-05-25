@@ -41,20 +41,10 @@ export class HomePage {
   constructor(private nav: NavController,player:AboutPage, screenOrientation: ScreenOrientation, platform:Platform ) {
     this.iconshome = IconsHome.slice(0);
     this.player = player;
-    this.platform = platform.is('ios');
-
-  //orientación de pantalla
-
-    screenOrientation.lock("portrait");
-
-  //Validación de plataforma para estilos
-
-    // if (platform.is('ios')) {
-      
-    // }
-    // else{
-    //   console.log('esto es android' );
-    // }
+    //orientación de pantalla
+    screenOrientation.lock('portrait').then(() => {
+      console.log('locked');
+    }).catch(()=>console.log('error'));
    
   }
   
@@ -112,14 +102,12 @@ export class HomePage {
   // función para cun media radio
 
   play() {
-  this.player.play().then(() => {
-    console.log('Playing');
-  });
-}
-
-pause() {
-  this.player.pause();
-}
-
+    this.player.play().then(() => {
+      console.log('Playing');
+    });
+  }
+  pause() {
+    this.player.pause();
+  }
 }
 
