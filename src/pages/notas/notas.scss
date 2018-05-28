@@ -1,6 +1,7 @@
 page-notas {
 
 }
+//.....................................................................Listado de notas..............................................//
 .tituloNotas{
     color:color($colors, secondary);
 }
@@ -44,9 +45,12 @@ tbody {
 #tablaNotas tr td:nth-child(2) {
     border: none !important;
  }
+ //............................................................... Calcular las notas..................................................................//
+
  #calculoRapido  {
-    margin-top: 100px;
+    margin-top: 30px;
     padding: 10px;
+    margin-bottom: 30px
  }
  #tituloCalculo{
      float: left;
@@ -71,4 +75,11 @@ tbody {
 }
 .button-ios {
     font-size: 1.3rem;
+}
+//................................................. footer Materia.......................................................//
+#footerMateria{
+    padding: 20px;
+}
+#footerMateria p {
+color:color($colors, secondary);
 }

@@ -36,7 +36,7 @@
             <th>DEF</th>                  
           </thead>                  
           <tbody id="tablaNotas"> <!-- Cuerpo de la tabla -->
-            <tr (click)="calcularNota(i)" *ngFor="let nota of notas; let i = index">
+            <tr (click)="seleccionarNota(nota)" *ngFor="let nota of notas; let i = index">
               <td><p>{{i+1}}.</p></td>
               <td><span>{{nota.asignatura}}</span></td>
               <td>{{nota.c1}}</td>
@@ -57,26 +57,24 @@
           <tbody id="notasCalculo">
             <tr>
               <td>Corte 1</td>
-              <td></td>
-              <!-- <td  [(ngModel)]="corte1" name="corte1"></td> (ngModel)]="corte1" name="corte1" -->
+              <td #corte1Input></td> 
               <td rowspan=2>
-                <button ion-button class="botonCalcular">CALCULAR</button>
+                <button ion-button class="botonCalcular" (click)="calcularNota()" >CALCULAR</button>
               </td>
             </tr>
             <tr>
               <td>Corte 2</td>
-              <td>5</td>
+              <td  #corte2Input></td>
             </tr>
           </tbody>         
         </table>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col id="msgResultado">
-        <div>
-          <p>{{mensaje}}</p>
-        </div>
-      </ion-col>
-    </ion-row>
   </ion-grid> 
 </ion-content>
+<ion-footer>
+    <div id="footerMateria">
+        
+        <p #mensaje></p>
+      </div>
+</ion-footer>
