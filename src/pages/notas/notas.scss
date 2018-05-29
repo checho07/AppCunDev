@@ -35,7 +35,7 @@ tbody {
     border: none !important;
 }
  #tablaNotas td:nth-child(1n+2)  {   
-    font-weight: 400;
+    font-weight: bold;
  
 }
  #tablaNotas td p:nth-child(2)  {   
@@ -45,6 +45,10 @@ tbody {
 #tablaNotas tr td:nth-child(2) {
     border: none !important;
  }
+ .fondoTr{
+    background-color:color($colors, secondary);
+    opacity: 0.3;
+}
  //............................................................... Calcular las notas..................................................................//
 
  #calculoRapido  {
@@ -76,10 +80,17 @@ tbody {
 .button-ios {
     font-size: 1.3rem;
 }
+.asignaturas{
+    font-weight: lighter !important;
+    color: #E7E1E0;
+}
 //................................................. footer Materia.......................................................//
 #footerMateria{
     padding: 20px;
 }
 #footerMateria p {
 color:color($colors, secondary);
+font-size: large;
+font-weight: bold;
 }
+

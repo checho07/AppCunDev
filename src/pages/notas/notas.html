@@ -26,7 +26,7 @@
   <ion-grid>
     <ion-row >
       <ion-col >
-        <table>
+        <table >
           <thead id="corteNotas"> 
             <th></th>                
             <th>ASIGNATURAS</th>
@@ -36,9 +36,9 @@
             <th>DEF</th>                  
           </thead>                  
           <tbody id="tablaNotas"> <!-- Cuerpo de la tabla -->
-            <tr (click)="seleccionarNota(nota)" *ngFor="let nota of notas; let i = index">
+            <tr  [ngClass]="{'fondoTr': selectedItem == nota}" (click)="seleccionarNota(nota,i)" *ngFor="let nota of notas; let i = index" >
               <td><p>{{i+1}}.</p></td>
-              <td><span>{{nota.asignatura}}</span></td>
+              <td><span class="asignaturas">{{nota.asignatura}}</span></td>
               <td>{{nota.c1}}</td>
               <td>{{nota.c2}}</td>
               <td>{{nota.c3}}</td>
@@ -59,7 +59,7 @@
               <td>Corte 1</td>
               <td #corte1Input></td> 
               <td rowspan=2>
-                <button ion-button class="botonCalcular" (click)="calcularNota()" >CALCULAR</button>
+                <button ion-button class="botonCalcular" (click)="calcularNota()">CALCULAR</button>
               </td>
             </tr>
             <tr>
@@ -75,6 +75,6 @@
 <ion-footer>
     <div id="footerMateria">
         
-        <p #mensaje></p>
+        <p #mensaje class="mensajeCorte" [hidden]="ocultar"></p>
       </div>
 </ion-footer>
