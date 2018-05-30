@@ -2,6 +2,9 @@ page-notas {
 
 }
 //.....................................................................Listado de notas..............................................//
+.toolbar-title {
+    text-shadow: 4px 4px 5px rgba(3, 35, 39,0.7);
+}
 .tituloNotas{
     color:color($colors, secondary);
 }
@@ -46,8 +49,7 @@ tbody {
     border: none !important;
  }
  .fondoTr{
-    background-color:color($colors, secondary);
-    opacity: 0.3;
+    background-color:rgb(3, 35, 39);
 }
  //............................................................... Calcular las notas..................................................................//
 

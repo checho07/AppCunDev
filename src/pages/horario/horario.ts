@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the HorarioPage page.
@@ -20,5 +21,11 @@ export class HorarioPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HorarioPage');
   }
+    //devolverpagina inicio
+
+ homePush(){
+  this.navCtrl.setRoot(HomePage)
+}
+
 
 }

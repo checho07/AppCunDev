@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the NotificacionesPage page.
@@ -19,6 +20,10 @@ export class NotificacionesPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NotificacionesPage');
+  }
+  //devolverpagina inicio
+  homePush(){
+    this.navCtrl.setRoot(HomePage)
   }
 
 }

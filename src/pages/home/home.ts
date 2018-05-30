@@ -99,7 +99,8 @@ export class HomePage {
     this.nav.push(NotificacionesPage);
   }
   
-  // función para cun media radio
+   
+   //función para cun media radio
 
   play() {
     this.player.play().then(() => {

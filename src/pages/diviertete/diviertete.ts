@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the DiviertetePage page.
@@ -19,6 +20,10 @@ export class DiviertetePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DiviertetePage');
+  }
+  //devolverpagina inicio
+  homePush(){
+    this.navCtrl.setRoot(HomePage)
   }
 
 }

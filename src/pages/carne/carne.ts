@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the CarnePage page.
@@ -20,5 +21,12 @@ export class CarnePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CarnePage');
   }
+
+    //devolverpagina inicio
+
+  homePush(){
+    this.navCtrl.setRoot(HomePage)
+  }
+
 
 }
