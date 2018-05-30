@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the UbicacionPage page.
@@ -20,5 +21,9 @@ export class UbicacionPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad UbicacionPage');
   }
+    //devolverpagina inicio
+    homePush(){
+      this.navCtrl.setRoot(HomePage)
+    }
 
 }

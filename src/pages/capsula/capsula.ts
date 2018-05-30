@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the CapsulaPage page.
@@ -20,5 +21,10 @@ export class CapsulaPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CapsulaPage');
   }
+  //devolverpagina inicio
 
+  homePush(){
+    this.navCtrl.setRoot(HomePage)
+  }
+   
 }

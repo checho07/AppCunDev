@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the CunVirtualPage page.
@@ -20,5 +21,10 @@ export class CunVirtualPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad CunVirtualPage');
   }
+  //devolverpagina inicio
 
+  homePush(){
+    this.navCtrl.setRoot(HomePage)
+  }
+  
 }
