@@ -38,25 +38,25 @@ export class CapsulaPage {
     homePush(){ this.navCtrl.setRoot(HomePage) }
    
     getVimeo(){
-        // let count = 1;
-        // this.rest.requestVimeo()
-        // .then(res =>{
-        //     console.log(res);
-        //     res.data.forEach(element => {
-        //         this.videos.push(unescape(element.embed.html))
-        //         console.log(this.videos);
-        //         this.embedVideo(element,count)
-        //         count ++;
-        //     });    
-        // },(err)=>{alert("no hay conexion"+err)});    
+        let count = 1;
+        this.rest.requestVimeo()
+        .then(res =>{
+            console.log(res);
+            res.data.forEach(element => {
+                this.videos.push(unescape(element.embed.html))
+                console.log(this.videos);
+                this.embedVideo(element,count)
+                count ++;
+            });    
+        },(err)=>{alert("no hay conexion"+err)});    
     }
     
     embedVideo(video,count) {        
         // This function puts the video on the page
-        // var  frame =document.createElement('div')
-        // frame.className = "frameVideo"
-        // frame.innerHTML = unescape(video.embed.html);
-        // document.getElementById('myList').appendChild(frame);
+        var  frame =document.createElement('div')
+        frame.className = "frameVideo"
+        frame.innerHTML = unescape(video.embed.html);
+        document.getElementById('myList').appendChild(frame);
     }
 
     abrirVideo(){
