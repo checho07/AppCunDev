@@ -53,10 +53,10 @@ export class CapsulaPage {
     
     embedVideo(video,count) {        
         // This function puts the video on the page
-        var  frame =document.createElement('div')
-        frame.className = "frameVideo"
-        frame.innerHTML = unescape(video.embed.html);
-        document.getElementById('myList').appendChild(frame);
+        // var  frame =document.createElement('div')
+        // frame.className = "frameVideo"
+        // frame.innerHTML = unescape(video.embed.html);
+        // document.getElementById('myList').appendChild(frame);
     }
 
     abrirVideo(){
