@@ -63,8 +63,8 @@ export class CapsulaPage {
         let options: CaptureImageOptions = { limit: 3 };
         this.mediaCapture.captureImage(options)
         .then(
-            (data: MediaFile[]) => console.log("esta es la data del video:"+data),
-            (err: CaptureError) => console.error(err)
+            (data: MediaFile[]) => alert(data),
+            (err: CaptureError) => alert(err)
         );        
     }
 }
