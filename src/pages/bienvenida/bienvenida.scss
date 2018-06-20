@@ -1,0 +1,29 @@
+page-bienvenida {
+
+}
+ion-slides {
+    height: 70% !important;
+}
+.options{
+    margin: 30px 5px !important;
+}
+.bottomOptions{    
+    background-color:#009c75;
+    height: 90px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 6px;
+}
+.footerbienvenida{
+    background-image: url(../assets/imgs/barrainferior.png)!important;
+    background-position:center;
+    background-size:contain;
+    max-width: 100%;
+    height: 6px;
+}
+.imgBienvenidaF{
+    height: 25px;
+}
+.bottomOptions p {
+    padding: 5px;
+}

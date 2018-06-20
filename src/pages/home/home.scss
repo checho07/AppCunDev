@@ -54,23 +54,6 @@ page-home {
     margin-top: 21px;
     margin-bottom: 10px;
 }
-
-.searchbar-md .searchbar-input {
-    color: #fff;
-    background: #005c61;
-    padding: 0px 49px;
-    border-radius: 20px;
-}
-.searchbar-ios .searchbar-input {
-    color: #fff !important;
-}
-.searchbar-search-icon {
-    background-image: url(../assets/imgs/3Lupa.png)!important;
-}
-.searchbar-md .searchbar-search-icon, .searchbar-md .searchbar-md-cancel {
-    background-size: 15px;
-    top: 9px;
-}
 .toolbar .searchbar-ios .searchbar-input {
     color: #fff;
     background: #005c61;
@@ -165,7 +148,7 @@ ion-app.ios [padding] {
     padding: 0px 16px;
 }
 
-.iconFooter{
+.iconFooter {
   height: 25px;
   margin: 25px 10px 0 14px;
 }
