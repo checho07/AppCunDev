@@ -23,6 +23,7 @@ import { DiviertetePage } from '../diviertete/diviertete';
 import { FuncionariosPage } from '../funcionarios/funcionarios';
 import { VitappPage } from '../vitapp/vitapp';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
+import {BienvenidaPage} from '../bienvenida/bienvenida';
 
 
 @Component({
@@ -99,7 +100,10 @@ export class HomePage {
     this.nav.push(NotificacionesPage);
   }
   
-   
+  Bienvenidapush(){
+    this.nav.push(BienvenidaPage);
+  }
+
    //función para cun media radio
 
   play() {
