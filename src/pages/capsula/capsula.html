@@ -10,7 +10,7 @@
       <ion-col >
         <ion-title>
          Cun Capsula
-        </ion-title>
+        </ion-title>  
       </ion-col>
       <ion-col >
         <ion-item text-wrap  color="primary" no-lines (click)="homePush()">
@@ -24,9 +24,17 @@
 </ion-header>
 
 <ion-content padding>
+    <button id="btn1" (click)="getVimeo()">Vimeo Token</button>
 
-
-  <ion-fab bottom right>
-    <button ion-fab mini color="#fff"><ion-icon name="add"></ion-icon></button>        
-  </ion-fab>
+    <ion-grid>
+        <ion-row>
+          <ion-col>
+              <div id="myList"></div>
+          </ion-col>
+        
+        </ion-row>
+        
+      </ion-grid>
+   <button ion-button (click)="abrirVideo()" >Video</button>
+    <!-- <div id="embed" width="100px !important">Loading video...</div> -->
 </ion-content>

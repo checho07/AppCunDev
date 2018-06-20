@@ -20,7 +20,7 @@ import { CarnePage } from '../pages/carne/carne';
 import { CalendarioPage } from '../pages/calendario/calendario';
 import { CunVirtualPage } from '../pages/cun-virtual/cun-virtual';
 import { HorarioPage } from '../pages/horario/horario';
-
+import { HttpClientModule } from '@angular/common/http';
 import { BibliotecaPage } from '../pages/biblioteca/biblioteca';
 import { AeiPage } from '../pages/aei/aei';
 import { CapsulaPage } from '../pages/capsula/capsula';
@@ -30,6 +30,11 @@ import { FuncionariosPage } from '../pages/funcionarios/funcionarios';
 import { VitappPage } from '../pages/vitapp/vitapp';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { HideHeaderDirective } from '../Directivas/headerHide';
+import { RestVimeoProvider } from '../providers/rest-vimeo/rest-vimeo';
+import { BienvenidaPage } from '../pages/bienvenida/bienvenida';
+
+import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ionic-native/media-capture';
+
 
 //import {ScrollingHeaderModule} from 'ionic-scrolling-header';
 
@@ -59,10 +64,12 @@ import { HideHeaderDirective } from '../Directivas/headerHide';
     CunPage,
     DirectorioPage, 
     NotificacionesPage,
-    HideHeaderDirective
+    HideHeaderDirective,
+    BienvenidaPage
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp,{
       backButtonText: ''
     })
@@ -90,13 +97,15 @@ import { HideHeaderDirective } from '../Directivas/headerHide';
     UbicacionPage,
     CunPage,
     DirectorioPage, 
-    NotificacionesPage
+    NotificacionesPage,
+    BienvenidaPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     ScreenOrientation,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RestVimeoProvider, MediaCapture
 
   ]
 })
