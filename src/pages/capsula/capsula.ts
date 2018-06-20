@@ -38,17 +38,17 @@ export class CapsulaPage {
     homePush(){ this.navCtrl.setRoot(HomePage) }
    
     getVimeo(){
-        let count = 1;
-        this.rest.requestVimeo()
-        .then(res =>{
-            console.log(res);
-            res.data.forEach(element => {
-                this.videos.push(unescape(element.embed.html))
-                console.log(this.videos);
-                this.embedVideo(element,count)
-                count ++;
-            });    
-        },(err)=>{alert("no hay conexion"+err)});    
+        // let count = 1;
+        // this.rest.requestVimeo()
+        // .then(res =>{
+        //     console.log(res);
+        //     res.data.forEach(element => {
+        //         this.videos.push(unescape(element.embed.html))
+        //         console.log(this.videos);
+        //         this.embedVideo(element,count)
+        //         count ++;
+        //     });    
+        // },(err)=>{alert("no hay conexion"+err)});    
     }
     
     embedVideo(video,count) {        
