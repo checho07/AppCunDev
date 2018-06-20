@@ -22,7 +22,7 @@ import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ion
 })
 export class CapsulaPage {
   videos: any = [];
-  
+  videosRes :any = [];
   constructor(public navCtrl: NavController, public navParams: NavParams, public rest: RestVimeoProvider, private mediaCapture: MediaCapture) {
  
   }
@@ -42,8 +42,9 @@ export class CapsulaPage {
         this.rest.requestVimeo()
         .then(res =>{
             console.log(res);
-            res.data.forEach(element => {
-                this.videos.push(unescape(element.embed.html))
+            this.videosRes = res;
+           this.videosRes.data.forEach(element => {
+                this.videos.push( decodeURI(element.embed.html))
                 console.log(this.videos);
                 this.embedVideo(element,count)
                 count ++;
@@ -55,7 +56,7 @@ export class CapsulaPage {
         // This function puts the video on the page
         var  frame =document.createElement('div')
         frame.className = "frameVideo"
-        frame.innerHTML = unescape(video.embed.html);
+        frame.innerHTML =  decodeURI(video.embed.html);
         document.getElementById('myList').appendChild(frame);
     }
 
