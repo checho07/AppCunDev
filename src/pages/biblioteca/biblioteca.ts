@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the BibliotecaPage page.
@@ -20,5 +21,11 @@ export class BibliotecaPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad BibliotecaPage');
   }
+    //devolverpagina inicio
+
+ homePush(){
+  this.navCtrl.setRoot(HomePage)
+}
+
 
 }

@@ -5,11 +5,22 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar hideBackButton>
-    <ion-title>Cun</ion-title>
+    <ion-row>
+      <ion-col >
+        <ion-title>
+         CUN
+        </ion-title>
+      </ion-col>
+      <ion-col >
+        <ion-item text-wrap  color="primary" no-lines (click)="homePush()">
+          <ion-avatar item-right>
+            <img class="iconoAnim" src="assets/imgs/icono-cun-verde.png">
+          </ion-avatar>
+        </ion-item>
+      </ion-col>
+    </ion-row>   
   </ion-navbar>
-
 </ion-header>
 
 

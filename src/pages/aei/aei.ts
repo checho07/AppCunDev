@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the AeiPage page.
@@ -20,5 +21,10 @@ export class AeiPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AeiPage');
   }
+  //devolverpagina inicio
 
+  homePush(){
+    this.navCtrl.setRoot(HomePage)
+  }
+  
 }
