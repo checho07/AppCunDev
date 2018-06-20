@@ -65,8 +65,7 @@ export class CapsulaPage {
         .then(
             (data: MediaFile[]) => console.log(data),
             (err: CaptureError) => console.error(err)
-        );
-        
+        );        
     }
 }
 
