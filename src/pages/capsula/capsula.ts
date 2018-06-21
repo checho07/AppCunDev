@@ -64,7 +64,9 @@ export class CapsulaPage {
         let options: CaptureImageOptions = { limit: 3 };
         this.mediaCapture.captureImage(options)
         .then(
-            (data: MediaFile[]) => alert(data),
+            (data: MediaFile[]) =>  data.forEach(element => {
+                alert(element);
+            }),
             (err: CaptureError) => alert(err)
         );        
     }
