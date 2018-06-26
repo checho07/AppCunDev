@@ -6,7 +6,7 @@ import { hostViewClassName } from '@angular/compiler';
 import {vimeo} from '../../../node_modules/vimeo/lib/vimeo';
 import {util} from  '../../../node_modules/util';
 import {Vimeo} from '../../../node_modules/vimeo/index.js';
-import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions } from '@ionic-native/media-capture';
+import { MediaCapture, MediaFile, CaptureError, CaptureImageOptions, CaptureVideoOptions } from '@ionic-native/media-capture';
 
 
 /**
@@ -61,14 +61,23 @@ export class CapsulaPage {
     }
 
     abrirVideo(){
-        let options: CaptureImageOptions = { limit: 3 };
-        this.mediaCapture.captureImage(options)
+        let options: CaptureVideoOptions = {limit:1,duration:10}
+        this.mediaCapture.captureVideo(options)
         .then(
             (data: MediaFile[]) =>  data.forEach(element => {
-                alert(element);
+                this.subirVideo(element.fullPath)
+                alert(element.name + "/" +
+                element.fullPath +
+                element.type );
+
+                
             }),
             (err: CaptureError) => alert(err)
         );        
+    }
+
+    subirVideo(path){
+        this.rest.uploadVideo(path);
     }
 }
 

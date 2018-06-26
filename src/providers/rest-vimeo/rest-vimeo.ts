@@ -40,5 +40,28 @@ export class RestVimeoProvider {
             });
         })  
     }
+
+    uploadVideo(path){
+        
+            this.client.upload(
+                path.toString(),
+                function (uri) {
+                    
+                  console.log('File upload completed. Your Vimeo URI is:', uri)
+                },
+                function (bytesUploaded, bytesTotal) {
+                  var percentage = (bytesUploaded / bytesTotal * 100).toFixed(2)
+                  console.log(bytesUploaded, bytesTotal, percentage + '%')
+                },
+                function (error) {
+                    
+                  console.log('Failed because: ' + error)
+                }
+              )
+        
+
+      
+    }
+
 }
 
