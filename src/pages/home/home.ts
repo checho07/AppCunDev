@@ -100,11 +100,7 @@ export class HomePage {
     this.nav.push(NotificacionesPage);
   }
   
-  Bienvenidapush(){
-    this.nav.push(BienvenidaPage);
-  }
-
-   //función para cun media radio
+  //función para cun media radio
 
   play() {
     this.player.play().then(() => {

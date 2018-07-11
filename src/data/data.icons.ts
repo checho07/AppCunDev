@@ -52,12 +52,6 @@ export const IconsHome = [
         page:   "AprendePage"
       },
       {
-        nombre: "AEI",
-        imagen: "assets/imgs/13aei.png",
-        page:   "AeiPage",
-        candado: "assets/imgs/IconoCandado.png"
-      },
-      {
         nombre: "Cun cápsula",
         imagen: "assets/imgs/14capsula.png",
         page:   "CapsulaPage"
@@ -71,16 +65,5 @@ export const IconsHome = [
         nombre: "Diviértete",
         imagen: "assets/imgs/16diviertete.png",
         page:   "DiviertetePage"
-      },
-      {
-        nombre: "Funcionarios",
-        imagen: "assets/imgs/17funcionarios.png",
-        page:   "FuncionariosPage",
-        candado:"assets/imgs/IconoCandado.png"
-      },
-      {
-        nombre: "Vitapp",
-        imagen: "assets/imgs/18vitapp.png",
-        page:   "VitappPage"
       }
 ];

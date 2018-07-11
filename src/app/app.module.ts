@@ -35,6 +35,8 @@ import { MediaCapture} from '@ionic-native/media-capture';
 import { NgxQRCodeModule } from 'ngx-qrcode2';
 import { HorariomodalPage} from '../pages/modales/horariomodal/horariomodal';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { Device } from '@ionic-native/device';
+import { AppAvailability } from '@ionic-native/app-availability';
 
 //import {ScrollingHeaderModule} from 'ionic-scrolling-header';
 
@@ -107,6 +109,8 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
     StatusBar,
     SplashScreen,
     ScreenOrientation,
+    Device,
+    AppAvailability,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RestVimeoProvider, 
     MediaCapture, 
