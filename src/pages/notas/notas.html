@@ -1,0 +1,80 @@
+<!--
+  Generated template for the NotasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-row>
+      <ion-col >
+        <ion-title>
+         Tus notas
+        </ion-title>
+      </ion-col>
+      <ion-col >
+        <ion-item text-wrap  color="primary" no-lines (click)="homePush()">
+          <ion-avatar item-right>
+            <img class="iconoAnim" src="assets/imgs/icono-cun-verde.png">
+          </ion-avatar>
+        </ion-item>
+      </ion-col>
+    </ion-row>   
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-grid>
+    <ion-row >
+      <ion-col >
+        <table >
+          <thead id="corteNotas"> 
+            <th></th>                
+            <th>ASIGNATURAS</th>
+            <th>C1</th>
+            <th>C2</th>
+            <th>C3</th>
+            <th>DEF</th>                  
+          </thead>                  
+          <tbody id="tablaNotas"> <!-- Cuerpo de la tabla -->
+            <tr  [ngClass]="{'fondoTr': selectedItem == nota}" (click)="seleccionarNota(nota,i)" *ngFor="let nota of notas; let i = index" >
+              <td><p>{{i+1}}.</p></td>
+              <td><span class="asignaturas">{{nota.asignatura}}</span></td>
+              <td>{{nota.c1}}</td>
+              <td>{{nota.c2}}</td>
+              <td>{{nota.c3}}</td>
+              <td>{{nota.c1}}</td>                   
+            </tr>                   
+          </tbody>
+        </table>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col>       
+        <table id="calculoRapido">
+          <thead id="tituloCalculo">    
+            <th >CALCULO RÁPIDO</th>
+          </thead>
+          <tbody id="notasCalculo">
+            <tr>
+              <td>Corte 1</td>
+              <td #corte1Input></td> 
+              <td rowspan=2>
+                <button ion-button class="botonCalcular" (click)="calcularNota()">CALCULAR</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Corte 2</td>
+              <td  #corte2Input></td>
+            </tr>
+          </tbody>         
+        </table>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+</ion-content>
+<ion-footer>
+    <div id="footerMateria">
+        
+        <p #mensaje class="mensajeCorte" [hidden]="ocultar"></p>
+      </div>
+</ion-footer>

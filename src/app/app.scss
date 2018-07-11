@@ -1,0 +1,53 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.bar-button-default {
+    color:color($colors, secondary);
+}
+
+//............................................................animaciones.............................................//
+
+.iconoAnim {
+    -webkit-animation-name: iconoAnim; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: iconoAnim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+/* Safari 4.0 - 8.0 */
+@keyframes iconoAnim {
+from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(0.5, 0.5, 0.5);
+
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1, 1, 1);
+
+  }
+
+  to {
+    -webkit-transform: scale3d(3, 3, 3);
+    transform: scale3d(0.5, 0.5, 0.5);
+
+  }
+}

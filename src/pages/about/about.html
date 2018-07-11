@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-row>
+      <ion-col >
+        <ion-title>
+          Cun Radio
+        </ion-title>
+      </ion-col>
+      <ion-col >
+        <ion-item text-wrap  color="primary" no-lines (click)="homePush()">
+          <ion-avatar item-right>
+            <img class="iconoAnim" src="assets/imgs/icono-cun-verde.png">
+          </ion-avatar>
+        </ion-item>
+      </ion-col>
+    </ion-row>   
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div class="sonido" *ngIf="prueba">
+      <img class="imgSonido" src="assets/imgs/sonido-activado.png">
+  </div>
+  <div class="sonido" [hidden]="prueba">
+      <img class="imgSonido" src="assets/imgs/sonidodesactivado.png">
+  </div>
+  <div class="iconoNiveles">
+      <img class="imgNiveles" src="assets/imgs/niveles.png">
+  </div>
+  <div class="iconoApagar" (click)="play()" [hidden]="prueba"  >
+    <img class="imgApagar" name="play"  src="assets/imgs/apagado.png">
+  </div> 
+  <div class="iconoApagar" (click)="pause()" *ngIf="prueba">
+    <img class="imgApagar" name="pause"  src="assets/imgs/encendido.png">
+  </div> 
+
+</ion-content>

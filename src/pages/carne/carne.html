@@ -1,0 +1,51 @@
+<!--
+  Generated template for the CarnePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-row>
+      <ion-col >
+        <ion-title>
+         Carne
+        </ion-title>
+      </ion-col>
+      <ion-col >
+        <ion-item text-wrap  color="primary" no-lines (click)="homePush()">
+          <ion-avatar item-right>
+            <img class="iconoAnim" src="assets/imgs/icono-cun-verde.png">
+          </ion-avatar>
+        </ion-item>
+      </ion-col>
+    </ion-row>   
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card  *ngFor="let qrData of qrdata;">
+    <img src="assets/imgs/carnetblanco.png"/>
+      <ion-item text-wrap  color="secondary"  >
+        <ion-thumbnail item-right>
+          <img src="assets/imgs/Captura.png">
+          <p>#YOSOYCUN</p>
+        </ion-thumbnail>        
+        <p class="datosC"> {{qrData.nombre}}</p>
+        <p class="datosC">Cc: {{qrData.cc}}</p>
+        <p class="datosC"> {{qrData.carrera}}</p>
+        <p class="datosC">Sede: {{qrData.sede}}</p>
+        <p class="datosC">RH: {{qrData.rh}}</p>        
+      </ion-item>      
+  </ion-card>
+  <div class="codigo" *ngIf="createdCode">
+    <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+  </div>    
+ </ion-content>
+<ion-footer>
+  <div class="footerCarne">
+    <p class="textFooter">Este carné es unico e intransferible, identifica al portador y supone
+      la conformidad del titular con las condiciones establecidas por la institución.
+    </p>
+  </div>
+</ion-footer>

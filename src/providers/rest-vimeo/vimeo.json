@@ -1,0 +1,8 @@
+{
+    "arrayVimeo":[{
+                    "client_id" : "b40712e6be861e9a27e6f57b68f6e637a5440c6c",
+	                "client_secret" : "g7u8Wt1ckgsLkn0B590GC6fFkBMO3FKshon+mD+kOXTpyVPgx1K8kav3s0zD0OaTMs8vnPfOvdFNfcPXzur1pMznktYxZj+VT7IDt+kaatA982aA14nC6R/XcZm/zef9",
+	                "access_token" : "https://api.vimeo.com/oauth/access_token"
+        }
+    ]
+}

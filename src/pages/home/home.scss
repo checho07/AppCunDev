@@ -1,0 +1,154 @@
+page-home {
+
+}
+ //...............................................pagina en general.......................................//
+.ion-page{
+    background-color: color($colors, primary);
+}
+.content{
+    background-color: color($colors, primary);    
+}
+.ion-app.md [padding] .scroll-content{
+    padding: 10px;
+}
+.scroll-content{
+    overflow-y: auto !important;
+}
+//..........................................clase de header y footer ionic ..................................//
+// .toolbar{
+//     padding: 4px 0 0 0 !important;
+// }
+.toolbar-ios {
+    padding: 0;
+    min-height: 56px;
+}
+.toolbar-md {
+    padding: 0;
+}
+.toolbar-background-md {
+    background-color: color($colors, primary);
+}
+.toolbar-background-ios {
+    background-color: color($colors, primary);
+}
+.toolbar-title {
+    margin-top: 5px !important;
+    text-align: left !important ;
+    font-size: 2em !important;
+    font-weight: bolder !important;
+    color: color($colors, secondary);
+ }
+.toolbar-ios ion-title{
+    padding: 0 10px;
+}
+.toolbar-content-ios {
+    height: auto !important;
+}
+//..............................................................header...........................................//
+.header {
+    height: fit-content !important;
+}
+
+.imgCun {
+    height: 43px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+}
+.toolbar .searchbar-ios .searchbar-input {
+    color: #fff;
+    background: #005c61;
+    padding: 0px 49px;
+    border-radius: 20px;
+    width: 100%;
+}
+.toolbar .searchbar-md{
+    padding: 5px 20px 0 20px;
+}
+.searchbar-ios {
+    padding: 4px 17px;
+}
+//................................................................ contenido, botones .....................................................//
+.grid {
+    padding: 0px;
+    margin-top: -20px;
+}
+.button-inner{
+    display: inherit;
+}
+.verdeClaro{
+    background-color:color($colors, secondary);
+    height: 90px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 6px;
+
+}
+.verdeOscuro{
+    background-color: color($colors, third);
+    height: 90px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 6px;
+
+}
+.col {
+    padding: 6px 5px;
+}
+.candadoIcon{
+    min-width: 100%;
+}
+.imageIcono{
+    height: 39px;
+    width: 45px;
+    padding-top: 4px;
+}
+ p{
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    font-family: Century Gothic;
+    font-size: 12px;
+    text-transform: capitalize;
+ }
+ .iconoImg{
+     margin-top: 5px;
+     text-align: center;
+ }
+ .candadoIco{
+     max-width:14%;
+     height: 14px;
+     float: left;
+ }
+.button{
+    box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.3) ,
+                0 3px 1px -2px rgba(0, 0, 0, 0.3) ,
+                0 1px 5px 0 rgba(0, 0, 0, 0.3) !important;
+}
+//................................................................ footer ........................................................//
+.gridFooter{
+  background-image: url(../assets/imgs/piepagina.png)!important;
+  //background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -26px;
+}
+.iconFooter{
+    max-width:100%;
+    height: 30px;
+    margin-top: 19px;
+}
+.iconoU{
+    max-width: 80%;
+    height: 45px;
+    margin: 10px 14px;
+}
+ion-app.ios [padding] {
+    padding: 0px 16px;
+}
+
+.iconFooter {
+  height: 25px;
+  margin: 25px 10px 0 14px;
+}

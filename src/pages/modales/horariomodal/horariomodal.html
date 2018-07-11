@@ -1,0 +1,36 @@
+<ion-header>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card id="contetCardH" *ngFor="let miHorario of Horario; let i = index;">
+    <ion-card-header>
+      <h1 class="materiaH">Calculo Multivariado</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item class="DetaG">
+        <ion-icon class="iconDeta" name="time"></ion-icon>
+        <p class="texDeta">Hora:</p>
+      </ion-item>
+      <ion-item class="DetaG">
+        <ion-icon class="iconDeta" name="pin"></ion-icon>
+        <p class="texDeta">Sede:</p>
+      </ion-item>        
+      <ion-item class="DetaG">
+        <ion-icon class="iconDeta" name="home"></ion-icon>
+        <p class="texDeta">Salon:</p>
+      </ion-item>
+      <ion-item class="DetaG"> 
+        <ion-icon class="iconDeta" name="person"></ion-icon>
+        <p class="texDeta">Docente:</p>
+      </ion-item> 
+      <ion-item class="DetaG">
+        <ion-icon class="iconDeta" name="contacts"></ion-icon>
+        <p class="texDeta">Grupo:</p>
+      </ion-item>
+      <ion-item class="DetaG">
+        <ion-icon name="help-circle" class="help" (click)="showAlert()"></ion-icon>  
+      </ion-item> 
+    </ion-card-content>
+  </ion-card>
+</ion-content>
