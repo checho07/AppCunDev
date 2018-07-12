@@ -78,7 +78,7 @@ export class DiviertetePage {
 
   launchExternalApp(iosSchemaName: string, androidPackageName: string, appUrl: string, httpUrl: string, username: string) {
   
-    let app: string;
+    let app:string;
 
   	if (this.device.platform === 'iOS') {
   		app = iosSchemaName;
@@ -103,7 +103,7 @@ export class DiviertetePage {
   }
 
   openArcunoid(username: string) {
-  	this.launchExternalApp('instagram://', 'com.instagram.android', 'instagram://user?username=', 'https://play.google.com/store/apps/details?id=com.cun.arcunoid', username);
+  	this.launchExternalApp('instagram://', 'com.instagram.android', 'instagram://user?username=', 'https://play.google.com/store/apps', username);
   }
   
   openTwitter(username: string) {
