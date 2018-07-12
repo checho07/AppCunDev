@@ -37,7 +37,7 @@ export class DiviertetePage {
 
     
   }
-
+/*
   launchExternalApp(iosSchemaName?: string, androidPackageName?: string, appUrl?: string, httpUrl?: string, username?: string) {
     let app: string;
     if (this.device.platform === 'iOS') {
@@ -74,6 +74,41 @@ export class DiviertetePage {
   openFacebook(username: string) {
     this.launchExternalApp('fb://', 'com.facebook.katana', 'fb://profile/', 'https://www.facebook.com/', username);
   }
+*/
 
+  launchExternalApp(iosSchemaName: string, androidPackageName: string, appUrl: string, httpUrl: string, username: string) {
+  	let app: string;
+  	if (this.device.platform === 'iOS') {
+  		app = iosSchemaName;
+  	} else if (this.device.platform === 'Android') {
+  		app = androidPackageName;
+  	} else {
+      let browser = new InAppBrowser();
+      browser.create(httpUrl + username, '_system');
+      return;
+  	}
+  
+    this.AppAvailability.check(androidPackageName).then(
+      () => { // success callback
+        let browser = new InAppBrowser();
+        browser.create(appUrl + username, '_system')
+      },
+      () => { // error callback
+        let browser = new InAppBrowser();
+        browser.create(httpUrl + username, '_system')
+      }
+    );
+  }
 
+  openInstagram(username: string) {
+  	this.launchExternalApp('instagram://', 'com.instagram.android', 'instagram://user?username=', 'https://www.instagram.com/', username);
+  }
+  
+  openTwitter(username: string) {
+  	this.launchExternalApp('twitter://', 'com.twitter.android', 'twitter://user?screen_name=', 'https://twitter.com/', username);
+  }
+  
+  openFacebook(username: string) {
+  	this.launchExternalApp('fb://', 'com.facebook.katana', 'fb://profile/', 'https://www.facebook.com/', username);
+  }
 }
