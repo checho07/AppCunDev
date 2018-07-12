@@ -100,7 +100,7 @@ export class DiviertetePage {
     );
   }
 
-  openInstagram(username: string) {
+  openArcunoid(username: string) {
   	this.launchExternalApp('instagram://', 'com.instagram.android', 'instagram://user?username=', 'https://www.instagram.com/', username);
   }
   
