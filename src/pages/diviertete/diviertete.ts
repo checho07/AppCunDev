@@ -103,7 +103,7 @@ export class DiviertetePage {
   }
 
   openArcunoid(username: string) {
-  	this.launchExternalApp('instagram://', 'com.instagram.android', 'instagram://user?username=', 'https://play.google.com/store/apps', username);
+  	this.launchExternalApp('instagram://', 'com.instagram.android', 'instagram://user?username=', 'https://play.google.com/store/apps/details?id=com.instagram.android', username);
   }
   
   openTwitter(username: string) {
