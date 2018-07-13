@@ -57,8 +57,7 @@ export class HomePage {
                         CarnePage,
                         CalendarioPage,
                         CunVirtualPage,
-                        HorarioPage,
-                        
+                        HorarioPage,                        
                         AboutPage,   
                         BibliotecaPage,
                         AprendePage,

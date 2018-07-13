@@ -1,3 +1,20 @@
 page-cun-virtual {
 
 }
+#contenVirtual{
+    margin: 100px 7px;
+}
+.virtualC {  
+    card-md {
+        margin: 90px 7px !important;
+    }
+    .card-content {    
+        background-color: #fff !important;
+    }
+    .card-title {
+      font-weight: bold;
+      color:color($colors, whiteDark);
+      text-align: center;
+    }
+}
+

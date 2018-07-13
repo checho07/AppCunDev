@@ -24,35 +24,30 @@ export class HorarioPage {
   virtual:boolean;
   cronograma: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
     this.Horario = datosHorario.slice(0);
     this.virtual=true;
   }
 
-  ionViewDidLoad() {
+  ionViewDidLoad() {  
     console.log('ionViewDidLoad HorarioPage');
   }
     //devolverpagina inicio
 
-  homePush(){
+  homePush() {
     this.navCtrl.setRoot(HomePage)
   }
 
- /* showModal(obj){
+  showModal(obj) {
     if (obj !=null) {
       this.cronograma;
       let modalH = this.modalCtrl.create(HorariomodalPage);
       modalH.present();
-      for (let index = 0; index < detalles.length; index++) {
-        
-        
-      }      
     } else {
       console.log('Sus Materias aún no han sido cargadas');
-    }
-   
+    }   
   }
-
+/*
   detalles = [
     {
       asignatura:'Calculo',

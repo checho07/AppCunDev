@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { BibliotecavirtualPage } from '../bibliotecavirtual/bibliotecavirtual';
+import { BibliotecatalogoPage } from '../bibliotecatalogo/bibliotecatalogo';
 
 /**
  * Generated class for the BibliotecaPage page.
@@ -14,6 +16,7 @@ import { HomePage } from '../home/home';
   templateUrl: 'biblioteca.html',
 })
 export class BibliotecaPage {
+  bibvir;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -23,9 +26,15 @@ export class BibliotecaPage {
   }
     //devolverpagina inicio
 
- homePush(){
-  this.navCtrl.setRoot(HomePage)
-}
+  homePush(){
+    this.navCtrl.setRoot(HomePage)
+  }
+  
+  bibvirtual(){
+    this.navCtrl.push(BibliotecavirtualPage);
+  }
 
-
+  bibcat(){
+    this.navCtrl.push(BibliotecatalogoPage);
+  }
 }

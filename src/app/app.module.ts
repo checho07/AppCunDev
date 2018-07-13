@@ -37,6 +37,8 @@ import { HorariomodalPage} from '../pages/modales/horariomodal/horariomodal';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { Device } from '@ionic-native/device';
 import { AppAvailability } from '@ionic-native/app-availability';
+import { BibliotecatalogoPage } from '../pages/bibliotecatalogo/bibliotecatalogo';
+import { BibliotecavirtualPage } from '../pages/bibliotecavirtual/bibliotecavirtual';
 
 //import {ScrollingHeaderModule} from 'ionic-scrolling-header';
 
@@ -68,7 +70,9 @@ import { AppAvailability } from '@ionic-native/app-availability';
     NotificacionesPage,
     HideHeaderDirective,
     BienvenidaPage,
-    HorariomodalPage
+    HorariomodalPage,
+    BibliotecatalogoPage,
+    BibliotecavirtualPage
   ],
   imports: [
     BrowserModule,
@@ -103,7 +107,9 @@ import { AppAvailability } from '@ionic-native/app-availability';
     DirectorioPage, 
     NotificacionesPage,
     BienvenidaPage,
-    HorariomodalPage
+    HorariomodalPage,
+    BibliotecatalogoPage,
+    BibliotecavirtualPage
   ],
   providers: [
     StatusBar,
