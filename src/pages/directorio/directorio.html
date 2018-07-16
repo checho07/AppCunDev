@@ -23,20 +23,22 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
+  <div id="dtaDirec" *ngFor="let item of directorio; let i = index">
+      <span > {{i+1}}. </span> <p> {{item.nombre}}</p>
+      <p>{{item.telefono}}</p>
+      <p>{{item.email}}</p>
     <ion-grid>
-        <ion-row>
-          <ion-col >
-            <p class="nombre">Línea de atención en Bogotá</p>
-            <p>3078180</p>              
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-              <ion-icon name="call"></ion-icon>
-          </ion-col>
-          <ion-col>
-              <ion-icon name="mail"></ion-icon>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <ion-row>
+        <ion-col>
+          <img src="../../assets/imgs/llamar.png" alt="" (click)="callnumber()"/>
+          <p class="icontext"> Llamar </p>
+        </ion-col>
+        <ion-col >      
+          <img src="../../assets/imgs/correo.png" alt=""/>
+          <p class="icontext">Enviar Correo </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid> 
+    <hr>
+  </div>
 </ion-content>

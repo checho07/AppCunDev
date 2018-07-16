@@ -88,5 +88,11 @@
     <plugin name="com.lampa.startapp" spec="https://github.com/lampaa/com.lampa.startapp.git" />
     <plugin name="cordova-plugin-device" spec="^2.0.2" />
     <plugin name="cordova-plugin-appavailability" spec="^0.4.2" />
+    <plugin name="mx.ferreyra.callnumber" spec="~0.0.2" />
+    <plugin name="cordova-plugin-call-directory" spec="^1.2.0">
+        <variable name="EXT_NAME" value="Cordova-Directory" />
+        <variable name="ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES" value="NO" />
+    </plugin>
+    <plugin name="cordova-plugin-email-composer" spec="^0.8.15" />
     <engine name="android" spec="7.0.0" />
 </widget>

@@ -1,4 +1,4 @@
-export const directorio = [
+export const datosDirectorio = [
     {
       nombre:  "Línea de atención en Bogotá" ,
       telefono:  "3078180",
