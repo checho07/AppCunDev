@@ -30,11 +30,11 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <img src="../../assets/imgs/llamar.png" alt=""  (tap)="callPhone()"/>
+          <img src="../../assets/imgs/llamar.png" alt=""  (tap)="callPhone(item.telefono)"/>
           <p class="icontext"> Llamar </p>
         </ion-col>
         <ion-col >      
-          <img src="../../assets/imgs/correo.png" alt="" (click)="sendEmail()" />
+          <img src="../../assets/imgs/correo.png" alt="" (click)="sendEmail(item.email)" />
           <p class="icontext">Enviar Correo </p>
         </ion-col>
       </ion-row>

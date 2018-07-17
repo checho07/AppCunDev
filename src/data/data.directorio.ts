@@ -15,7 +15,6 @@ export const datosDirectorio = [
     {
         nombre:  "Línea de atención en Bogotá" ,
         telefono:  "3813222",
-        email:    "contacto@cun.edu.co",
         iconcall: "call",
         iconmail: "mail"
     }

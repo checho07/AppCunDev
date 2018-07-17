@@ -20,23 +20,25 @@ export class DirectorioPage {
     console.log('ionViewDidLoad DirectorioPage');
   }
 
-  homePush(){
+  homePush() {
     this.navCtrl.setRoot(HomePage);
   }
   
-  callPhone(){
-    this.callNumber.callNumber("0319013017", true)
-      .then(() => alert('Launched dialer!'))
-      .catch(() => alert('Error launching dialer'));
+  callPhone(numero) {  
+    this.callNumber.callNumber(numero, true)
+    .then(() => alert('Launched dialer!'))
+    .catch(() => alert('Error launching dialer'));
   }
 
-  sendEmail(){
+  sendEmail(emailData) {
+    console.log(emailData);
       let email = {
-        to: 'contacto@cun.edu.co',
+        to: emailData,
         cc: '',
         subject: 'Informacion al estudiante',
         body: 'Buen dia mi nombre es leidy, quiero saber como puedo realizar mis practicas.',
         isHtml: true
+        
       };   
       this.emailComposer.open(email);
     }
