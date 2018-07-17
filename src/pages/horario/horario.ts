@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ModalController } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import {datosHorario} from '../../data/dataHorario';
 import {horarioC} from '../../interfaces/Horario.interface';
@@ -24,7 +24,7 @@ export class HorarioPage {
   virtual:boolean;
   cronograma: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController, public ViewCtrl:ViewController) {
     this.Horario = datosHorario.slice(0);
     this.virtual=true;
   }
@@ -46,6 +46,10 @@ export class HorarioPage {
   showModal() {
     const modal = this.modalCtrl.create(HorariomodalPage);
     modal.present();
+  }
+  
+  closemodal(){
+    this.ViewCtrl.dismiss();
   }
 
 

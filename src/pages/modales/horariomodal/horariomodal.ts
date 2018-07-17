@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
 /**
@@ -20,7 +20,8 @@ export class HorariomodalPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public alertCtrl: AlertController
+    public alertCtrl: AlertController,
+    public ViewCtrl:ViewController
   ) {  }
 
   ionViewDidLoad() {
@@ -41,4 +42,9 @@ export class HorariomodalPage {
     });
     alert.present();
   }
+  
+  closeModal(){
+    this.ViewCtrl.dismiss();
+  }
+
 }
