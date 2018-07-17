@@ -39,10 +39,8 @@ import { Device } from '@ionic-native/device';
 import { AppAvailability } from '@ionic-native/app-availability';
 import { BibliotecatalogoPage } from '../pages/bibliotecatalogo/bibliotecatalogo';
 import { BibliotecavirtualPage } from '../pages/bibliotecavirtual/bibliotecavirtual';
-
-//import {ScrollingHeaderModule} from 'ionic-scrolling-header';
-
-//import {StreamigMedia } from '@ionic-native/streaming-media'
+import { CallNumber } from '@ionic-native/call-number';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 @NgModule({
   declarations: [
@@ -116,6 +114,8 @@ import { BibliotecavirtualPage } from '../pages/bibliotecavirtual/bibliotecavirt
     SplashScreen,
     ScreenOrientation,
     Device,
+    CallNumber,
+    EmailComposer,
     AppAvailability,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RestVimeoProvider, 

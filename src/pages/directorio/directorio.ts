@@ -1,18 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {datosDirectorio} from '../../data/data.directorio';
-import { EmailComposer } from '@ionic-native/email-composer';
 import { HomePage } from '../home/home';
-
-
-
-
-/**
- * Generated class for the DirectorioPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { CallNumber } from '@ionic-native/call-number';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 @Component({
   selector: 'page-directorio',
@@ -21,7 +12,7 @@ import { HomePage } from '../home/home';
 export class DirectorioPage {
   
   directorio =[];
-  constructor(public navCtrl: NavController, public navParams: NavParams, public emailComposer: EmailComposer,) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public callNumber: CallNumber, public emailComposer: EmailComposer) {
     this.directorio = datosDirectorio.slice(0);
   }
 
@@ -32,4 +23,22 @@ export class DirectorioPage {
   homePush(){
     this.navCtrl.setRoot(HomePage);
   }
-}
+  
+  callPhone(){
+    this.callNumber.callNumber("0319013017", true)
+      .then(() => alert('Launched dialer!'))
+      .catch(() => alert('Error launching dialer'));
+  }
+
+  sendEmail(){
+      let email = {
+        to: 'contacto@cun.edu.co',
+        cc: '',
+        subject: 'Informacion al estudiante',
+        body: 'Buen dia mi nombre es leidy, quiero saber como puedo realizar mis practicas.',
+        isHtml: true
+      };   
+      this.emailComposer.open(email);
+    }
+   
+  }
