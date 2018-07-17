@@ -39,7 +39,6 @@ import { Device } from '@ionic-native/device';
 import { AppAvailability } from '@ionic-native/app-availability';
 import { BibliotecatalogoPage } from '../pages/bibliotecatalogo/bibliotecatalogo';
 import { BibliotecavirtualPage } from '../pages/bibliotecavirtual/bibliotecavirtual';
-import { CallDirectory } from '@ionic-native/call-directory';
 
 //import {ScrollingHeaderModule} from 'ionic-scrolling-header';
 
@@ -79,7 +78,6 @@ import { CallDirectory } from '@ionic-native/call-directory';
     BrowserModule,
     HttpClientModule,
     NgxQRCodeModule,
-    CallDirectory,
     IonicModule.forRoot(MyApp,{
       backButtonText: ''
     })

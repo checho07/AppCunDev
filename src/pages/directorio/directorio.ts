@@ -3,7 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import {datosDirectorio} from '../../data/data.directorio';
 import { EmailComposer } from '@ionic-native/email-composer';
 import { HomePage } from '../home/home';
-import { CallDirectory } from '@ionic-native/call-directory';
+
 
 
 
@@ -21,7 +21,7 @@ import { CallDirectory } from '@ionic-native/call-directory';
 export class DirectorioPage {
   
   directorio =[];
-  constructor(public navCtrl: NavController, public navParams: NavParams, public emailComposer: EmailComposer, public callDirectory: CallDirectory) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public emailComposer: EmailComposer,) {
     this.directorio = datosDirectorio.slice(0);
   }
 

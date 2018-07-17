@@ -45,6 +45,12 @@ page-horariomodal {
         background-color:color($colors, secondary) !important;
     } 
 }
+.textmodal{
+    color:color($colors, yellowIcon ) !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    float: left;
+}
 .bOk {
     font-weight: bold !important;
     color:color($colors, yellowIcon) !important;

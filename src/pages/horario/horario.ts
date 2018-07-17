@@ -38,169 +38,26 @@ export class HorarioPage {
     this.navCtrl.setRoot(HomePage)
   }
 
-  showModal(obj) {
+  /*showModal() {
+      let modalH = this.modalCtrl.create(HorariomodalPage);
+      modalH.present();
+  }*/
+    
+  showModal() {
+    const modal = this.modalCtrl.create(HorariomodalPage);
+    modal.present();
+  }
+
+
+ /* showModal(obj) {
     if (obj !=null) {
+
       this.cronograma;
       let modalH = this.modalCtrl.create(HorariomodalPage);
       modalH.present();
     } else {
       console.log('Sus Materias aún no han sido cargadas');
     }   
-  }
-/*
-  detalles = [
-    {
-      asignatura:'Calculo',
-      dia:'lunes',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'Calculo',
-      dia:'martes',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'español',
-      dia:'',
-      horaInicio:'lunes',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'ciencia',
-      dia:'miercoles',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'ingles',
-      dia:'viernes',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'software',
-      dia:'jueves',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'hola',
-      dia:'miercoles',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'prueba',
-      dia:'lunes',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    },
-    {
-      asignatura:'eyy',
-      dia:'domingo',
-      horaInicio:'',
-      horaFin:'',
-      sede:'',
-      aula:'',
-      grupo:'',
-      docente:'',
-      FechaInicio: '',
-      FechaFinal:'',
-      Nivel:'',
-      Créditos:'',
-      Horas:'',
-      CodPrograma:'',
-      CodPensum:''
-    }    
-  ]*/
+  }*/
+
 }
